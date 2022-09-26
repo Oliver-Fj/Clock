@@ -13,47 +13,47 @@ class ProgressClock {
 	getDayOfWeek(day) {
 		switch (day) {
 			case 1:
-				return "Monday";
+				return "Lunes";
 			case 2:
-				return "Tuesday";
+				return "Martes";
 			case 3:
-				return "Wednesday";
+				return "Miercoles";
 			case 4:
-				return "Thursday";
+				return "Jueves";
 			case 5:
-				return "Friday";
+				return "Viernes";
 			case 6:
-				return "Saturday";
+				return "Sabado";
 			default:
-				return "Sunday";
+				return "Domingo";
 		}
 	}
 	getMonthInfo(mo,yr) {
 		switch (mo) {
 			case 1:
-				return { name: "February", days: yr % 4 === 0 ? 29 : 28 };
+				return { name: "Febrero", days: yr % 4 === 0 ? 29 : 28 };
 			case 2:
-				return { name: "March", days: 31 };
+				return { name: "Marzo", days: 31 };
 			case 3:
-				return { name: "April", days: 30 };
+				return { name: "Abril", days: 30 };
 			case 4:
-				return { name: "May", days: 31 };
+				return { name: "Mayo", days: 31 };
 			case 5:
-				return { name: "June", days: 30 };
+				return { name: "Junio", days: 30 };
 			case 6:
-				return { name: "July", days: 31 };
+				return { name: "Julio", days: 31 };
 			case 7:
-				return { name: "August", days: 31 };
+				return { name: "Agosto", days: 31 };
 			case 8:
-				return { name: "September", days: 30 };
+				return { name: "Setiembre", days: 30 };
 			case 9:
-				return { name: "October", days: 31 };
+				return { name: "Octubre", days: 31 };
 			case 10:
-				return { name: "November", days: 30 };
+				return { name: "Noviembre", days: 30 };
 			case 11:
-				return { name: "December", days: 31 };
+				return { name: "Diciembre", days: 31 };
 			default:
-				return { name: "January", days: 31 };
+				return { name: "Enero", days: 31 };
 		}
 	}
 	update() {
